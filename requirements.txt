@@ -1,0 +1,4 @@
+langchain
+pandas
+openai
+langchain-community

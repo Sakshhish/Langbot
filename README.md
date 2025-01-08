@@ -1,1 +1,3 @@
 # Langbot
+
+openai_api_key = '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'

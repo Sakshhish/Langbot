@@ -1,0 +1,31 @@
+Q: What year was Python created?
+A: Python was created in 1991.
+
+Q: What programming paradigm does Java use?
+A: Java primarily uses an object-oriented programming paradigm.
+
+Q: Is JavaScript statically or dynamically typed?
+A: JavaScript is dynamically typed.
+
+Q: What is the main paradigm of Ruby?
+A: Ruby is a multi-paradigm language, but it is primarily object-oriented.
+
+Q: When was C++ first released?
+A: C++ was first released in 1985.
+
+
+
+
+You can ask questions about the programming languages' characteristics like:
+
+1. When specific languages were created (e.g., "When was Python created?")
+2. Which languages use certain paradigms (e.g., "Which languages are multi-paradigm?")
+3. Typing system questions (e.g., "Which languages are statically typed?")
+4. Comparative questions (e.g., "What are the differences between Java and Python?")
+5. Questions about languages created in specific years (e.g., "Which languages were created in 1995?")
+
+To test the chatbot, try asking any of these questions.
+
+
+Hugging face access token
+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
