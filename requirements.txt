@@ -1,4 +1,9 @@
 langchain
 pandas
 openai
-langchain-community
+langchain_community
+sentence-transformers
+faiss-cpu
+transformers
+huggingface-hub
+rich
