@@ -160,11 +160,3 @@ if __name__ == "__main__":
     except Exception as e:
         Console().print(f"[bold red]Fatal error: {str(e)}[/bold red]")
 
-
-        
-# export OPENAI_API_KEY='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'
-
-
-
-
-# Hugging face access token = "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"

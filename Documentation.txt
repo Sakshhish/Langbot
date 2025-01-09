@@ -1,0 +1,81 @@
+# RAG Chatbot Documentation
+
+## Table of Contents
+1. [Overview](#overview)
+2. [Technical Architecture](#technical-architecture)
+3. [Features](#features)
+4. [Implementation Details](#implementation-details)
+5. [API Reference](#api-reference)
+6. [Error Handling](#error-handling)
+
+## Overview
+The RAG Chatbot is a Python-based application that implements Retrieval-Augmented Generation (RAG) using LangChain. It combines document retrieval with language model generation to provide accurate responses based on a provided knowledge base.
+
+## Technical Architecture
+
+### Components
+1. **Document Loader**: Uses `CSVLoader` to load structured data
+2. **Text Splitter**: `RecursiveCharacterTextSplitter` for document chunking
+3. **Vector Store**: `FAISS` for efficient document retrieval
+4. **Embeddings**: HuggingFace embeddings for text vectorization
+5. **Language Model**: HuggingFace's flan-t5-base for response generation
+6. **Memory**: Conversation buffer for maintaining chat history
+
+### Data Flow
+1. Data Loading → Text Splitting → Vector Store Creation
+2. User Query → Document Retrieval → Context Generation → Response Generation
+
+## Features
+- Interactive chat interface with command support
+- Conversation history management
+- Rich text formatting for better readability
+- Error handling and recovery
+- Special commands for system control
+
+### Available Commands
+- `history`: Display conversation history
+- `clear`: Clear conversation history
+- `quit`: Exit application
+
+## Implementation Details
+
+### Key Classes
+
+#### RAGChatApplication
+Main application class handling:
+- Data pipeline setup
+- User interaction
+- Query processing
+- Response generation
+
+### Configuration Requirements
+- HuggingFace API token with proper permissions
+- CSV dataset with structured information
+- Python 3.8+ environment
+
+## API Reference
+
+### Main Methods
+
+#### `__init__(data_path, hf_token)`
+Initializes the application with data path and HuggingFace token.
+
+#### `load_data()`
+Loads and processes the dataset.
+
+#### `create_vector_store()`
+Creates FAISS vector store for document retrieval.
+
+#### `ask(question)`
+Processes user questions and returns answers.
+
+## Error Handling
+- Token validation errors
+- Data loading failures
+- Model inference issues
+- Connection problems
+
+### Common Error Resolution
+1. Invalid token: Recreate token with proper permissions
+2. Data loading errors: Check CSV file format
+3. Model errors: Verify internet connection and token permissions
